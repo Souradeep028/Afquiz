@@ -1,7 +1,7 @@
 $('#q1container').hide();
 $('#q2container').hide();
 $('#q3container').hide();
-// $('#q4container').hide();
+$('#q4container').hide();
 // $('#q5container').hide();
 // $('#q6container').hide();
 // $('#q7container').hide();
@@ -57,16 +57,16 @@ $('#q3row').html(d.q3.answerlist.reduce(function (acc, c) {
         </div>`;
 }, ''));
 
-// $('#q4h').text(d.q4.heading);
-// $('#q4row').html(d.q4.answerlist.reduce(function (acc, c) {
-//     return acc + 
-//         `<div class="col-sm" align="center">
-//             <div class="card q4" id="${c.id}">
-//                 <img class="card-img-top" src="./img/${c.img}">
-//             </div>
-//             <br>
-//         </div>`;
-// }, ''));
+$('#q4h').text(d.q4.heading);
+$('#q4row').html(d.q4.answerlist.reduce(function (acc, c) {
+    return acc + 
+        `<div class="col-sm" align="center">
+            <div class="card q4" id="${c.id}">
+                <img class="card-img-top" src="./img/${c.img}">
+            </div>
+            <br>
+        </div>`;
+}, ''));
 
 // $('#q5h').text(d.q5.heading);
 // $('#q5row').html(d.q5.answerlist.reduce(function (acc, c) {

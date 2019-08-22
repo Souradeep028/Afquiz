@@ -1,6 +1,7 @@
 $('#q1container').hide();
 $('#q2container').hide();
 $('#q3container').hide();
+$('#q4container').hide();
 $('#emailcontainer').hide();
 $('#endingcontainer').hide();
 
@@ -53,6 +54,17 @@ $('#q3row').html(d.q3.answerlist.reduce(function (acc, c) {
         </div>`;
 }, ''));
 
+$('#q4h').text(d.q4.heading);
+$('#q4row').html(d.q4.answerlist.reduce(function (acc, c) {
+    return acc + 
+        `<div class="col-sm" align="center">
+            <div class="card q4" id="${c.id}">
+                <img class="card-img-top" src="./img/${c.img}">
+            </div>
+            <br>
+        </div>`;
+}, ''));
+
 $('#emailh').text(d.emailform.heading);
 
 $( document ).ready(function() {
@@ -80,8 +92,14 @@ $( document ).ready(function() {
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q3').click(function() {
-        q[2] = $(this).attr('id');
+        q[1] = $(this).attr('id');
         $('#q3container').hide(400);
+        $('#q4container').show(800);
+        $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
+    });
+    $('.q4').click(function() {
+        q[2] = $(this).attr('id');
+        $('#q4container').hide(400);
         if (emailcollected) {
             $('#endingcontainer').show(800);
         } else {
@@ -112,6 +130,7 @@ $( document ).ready(function() {
         $('#q1input').val(q[0]);
         $('#q2input').val(q[1]);
         $('#q3input').val(q[2]);
+        $('#q4input').val(q[2]);
         $('#outcomeinput').val(outcome);
     });
     $('#submitemail').prop('disabled', true);
@@ -123,6 +142,7 @@ $( document ).ready(function() {
             $('#q1input').prop('disabled', false);
             $('#q2input').prop('disabled', false);
             $('#q3input').prop('disabled', false);
+            $('#q4input').prop('disabled', false);
             $('#outcomeinput').prop('disabled', false);
         }
     });
