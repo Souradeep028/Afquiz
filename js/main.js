@@ -164,10 +164,10 @@ $( document ).ready(function() {
         var o1 = d.outcomes[0];
         var o2 = d.outcomes[1];
         var o3 = d.outcomes[2];
-        var o4 = d.outcomes[3];
-        var o5 = d.outcomes[4];
-        var o6 = d.outcomes[5];
-        var o7 = d.outcomes[6];
+        // var o3 = d.outcomes[3];
+        // var o3 = d.outcomes[4];
+        // var o3 = d.outcomes[5];
+        // var o3 = d.outcomes[6];
         var outcome;
         if (o1.rr[0].indexOf(q[0]) != -1 && o1.rr[1].indexOf(q[1]) != -1 && o1.rr[2].indexOf(q[2]) != -1) {
             $('#endingh').text(o1.heading);
@@ -184,26 +184,26 @@ $( document ).ready(function() {
             $('#endingp').text(o3.paragraph);
             $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
             outcome = o3.id;
-        } else if (o4.rr[0].indexOf(q[0]) != -1 && o4.rr[1].indexOf(q[1]) != -1 && o4.rr[2].indexOf(q[2]) != -1) {
-            $('#endingh').text(o4.heading);
-            $('#endingp').text(o4.paragraph);
-            $('#guideimg').prop('src', './img/' + city + '/' + o4.img);
-            outcome = o4.id; 
-        } else if (o5.rr[0].indexOf(q[0]) != -1 && o5.rr[1].indexOf(q[1]) != -1 && o5.rr[2].indexOf(q[2]) != -1) {
-            $('#endingh').text(o5.heading);
-            $('#endingp').text(o5.paragraph);
-            $('#guideimg').prop('src', './img/' + city + '/' + o5.img);
-            outcome = o5.id; 
-        } else if (o6.rr[0].indexOf(q[0]) != -1 && o6.rr[1].indexOf(q[1]) != -1 && o6.rr[2].indexOf(q[2]) != -1) {
-            $('#endingh').text(o6.heading);
-            $('#endingp').text(o6.paragraph);
-            $('#guideimg').prop('src', './img/' + city + '/' + o6.img);
-            outcome = o6.id; 
+        } else if (o3.rr[0].indexOf(q[0]) != -1 && o3.rr[1].indexOf(q[1]) != -1 && o3.rr[2].indexOf(q[2]) != -1) {
+            $('#endingh').text(o3.heading);
+            $('#endingp').text(o3.paragraph);
+            $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
+            outcome = o3.id; 
+        } else if (o3.rr[0].indexOf(q[0]) != -1 && o3.rr[1].indexOf(q[1]) != -1 && o3.rr[2].indexOf(q[2]) != -1) {
+            $('#endingh').text(o3.heading);
+            $('#endingp').text(o3.paragraph);
+            $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
+            outcome = o3.id; 
+        } else if (o3.rr[0].indexOf(q[0]) != -1 && o3.rr[1].indexOf(q[1]) != -1 && o3.rr[2].indexOf(q[2]) != -1) {
+            $('#endingh').text(o3.heading);
+            $('#endingp').text(o3.paragraph);
+            $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
+            outcome = o3.id; 
         } else {
-                $('#endingh').text(o7.heading);
-                $('#endingp').text(o7.paragraph);
-                $('#guideimg').prop('src', './img/' + city + '/' + o7.img);
-                outcome = o7.id;
+                $('#endingh').text(o3.heading);
+                $('#endingp').text(o3.paragraph);
+                $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
+                outcome = o3.id;
         }
         $('#cinput').val(city);
         $('#q1input').val(q[0]);
