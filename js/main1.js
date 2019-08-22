@@ -1,6 +1,10 @@
 $('#q1container').hide();
 $('#q2container').hide();
 $('#q3container').hide();
+// $('#q4container').hide();
+// $('#q5container').hide();
+// $('#q6container').hide();
+// $('#q7container').hide();
 $('#emailcontainer').hide();
 $('#endingcontainer').hide();
 
@@ -53,6 +57,51 @@ $('#q3row').html(d.q3.answerlist.reduce(function (acc, c) {
         </div>`;
 }, ''));
 
+// $('#q4h').text(d.q4.heading);
+// $('#q4row').html(d.q4.answerlist.reduce(function (acc, c) {
+//     return acc + 
+//         `<div class="col-sm" align="center">
+//             <div class="card q4" id="${c.id}">
+//                 <img class="card-img-top" src="./img/${c.img}">
+//             </div>
+//             <br>
+//         </div>`;
+// }, ''));
+
+// $('#q5h').text(d.q5.heading);
+// $('#q5row').html(d.q5.answerlist.reduce(function (acc, c) {
+//     return acc + 
+//         `<div class="col-sm" align="center">
+//             <div class="card q5" id="${c.id}">
+//                 <img class="card-img-top" src="./img/${c.img}">
+//             </div>
+//             <br>
+//         </div>`;
+// }, ''));
+
+// $('#q6h').text(d.q6.heading);
+// $('#q6row').html(d.q6.answerlist.reduce(function (acc, c) {
+//     return acc + 
+//         `<div class="col-sm" align="center">
+//             <div class="card q6" id="${c.id}">
+//                 <img class="card-img-top" src="./img/${c.img}">
+//             </div>
+//             <br>
+//         </div>`;
+// }, ''));
+
+// $('#q7h').text(d.q7.heading);
+// $('#q7row').html(d.q7.answerlist.reduce(function (acc, c) {
+//     return acc + 
+//         `<div class="col-sm" align="center">
+//             <div class="card q7" id="${c.id}">
+//                 <img class="card-img-top" src="./img/${c.img}">
+//             </div>
+//             <br>
+//         </div>`;
+// }, ''));
+
+
 $('#emailh').text(d.emailform.heading);
 
 $( document ).ready(function() {
@@ -79,9 +128,33 @@ $( document ).ready(function() {
         $('#q3container').show(800);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
+    // $('.q3').click(function() {
+    //     q[1] = $(this).attr('id');
+    //     $('#q3container').hide(400);
+    //     $('#q4container').show(800);
+    //     $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
+    // });
+    // $('.q4').click(function() {
+    //     q[1] = $(this).attr('id');
+    //     $('#q4container').hide(400);
+    //     $('#q5container').show(800);
+    //     $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
+    // });
+    // $('.q5').click(function() {
+    //     q[1] = $(this).attr('id');
+    //     $('#q5container').hide(400);
+    //     $('#q6container').show(800);
+    //     $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
+    // });
+    // $('.q6').click(function() {
+    //     q[1] = $(this).attr('id');
+    //     $('#q6container').hide(400);
+    //     $('#q7container').show(800);
+    //     $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
+    // });
     $('.q3').click(function() {
-        q[2] = $(this).attr('id');
-        $('#q3container').hide(400);
+        q[1] = $(this).attr('id');
+        $('#q6container').hide(400);
         if (emailcollected) {
             $('#endingcontainer').show(800);
         } else {
@@ -91,6 +164,10 @@ $( document ).ready(function() {
         var o1 = d.outcomes[0];
         var o2 = d.outcomes[1];
         var o3 = d.outcomes[2];
+        // var o3 = d.outcomes[3];
+        // var o3 = d.outcomes[4];
+        // var o3 = d.outcomes[5];
+        // var o3 = d.outcomes[6];
         var outcome;
         if (o1.rr[0].indexOf(q[0]) != -1 && o1.rr[1].indexOf(q[1]) != -1 && o1.rr[2].indexOf(q[2]) != -1) {
             $('#endingh').text(o1.heading);
@@ -102,16 +179,42 @@ $( document ).ready(function() {
             $('#endingp').text(o2.paragraph);
             $('#guideimg').prop('src', './img/' + city + '/' + o2.img);
             outcome = o2.id;
-        } else {
-            $('#endingh').text(o3.heading);
-            $('#endingp').text(o3.paragraph);
-            $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
-            outcome = o3.id;
+        } 
+        // else if (o3.rr[0].indexOf(q[0]) != -1 && o3.rr[1].indexOf(q[1]) != -1 && o3.rr[2].indexOf(q[2]) != -1) {
+        //     $('#endingh').text(o3.heading);
+        //     $('#endingp').text(o3.paragraph);
+        //     $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
+        //     outcome = o3.id;
+        // } else if (o3.rr[0].indexOf(q[0]) != -1 && o3.rr[1].indexOf(q[1]) != -1 && o3.rr[2].indexOf(q[2]) != -1) {
+        //     $('#endingh').text(o3.heading);
+        //     $('#endingp').text(o3.paragraph);
+        //     $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
+        //     outcome = o3.id; 
+        // } else if (o3.rr[0].indexOf(q[0]) != -1 && o3.rr[1].indexOf(q[1]) != -1 && o3.rr[2].indexOf(q[2]) != -1) {
+        //     $('#endingh').text(o3.heading);
+        //     $('#endingp').text(o3.paragraph);
+        //     $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
+        //     outcome = o3.id; 
+        // } else if (o3.rr[0].indexOf(q[0]) != -1 && o3.rr[1].indexOf(q[1]) != -1 && o3.rr[2].indexOf(q[2]) != -1) {
+        //     $('#endingh').text(o3.heading);
+        //     $('#endingp').text(o3.paragraph);
+        //     $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
+        //     outcome = o3.id; 
+        // } 
+        else {
+                $('#endingh').text(o3.heading);
+                $('#endingp').text(o3.paragraph);
+                $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
+                outcome = o3.id;
         }
         $('#cinput').val(city);
         $('#q1input').val(q[0]);
         $('#q2input').val(q[1]);
         $('#q3input').val(q[2]);
+        // $('#q4input').val(q[2]);
+        // $('#q5input').val(q[2]);
+        // $('#q6input').val(q[2]);
+        // $('#q7input').val(q[2]);
         $('#outcomeinput').val(outcome);
     });
     $('#submitemail').prop('disabled', true);
@@ -123,6 +226,10 @@ $( document ).ready(function() {
             $('#q1input').prop('disabled', false);
             $('#q2input').prop('disabled', false);
             $('#q3input').prop('disabled', false);
+            // $('#q4input').prop('disabled', false);
+            // $('#q5input').prop('disabled', false);
+            // $('#q6input').prop('disabled', false);
+            // $('#q7input').prop('disabled', false);
             $('#outcomeinput').prop('disabled', false);
         }
     });
