@@ -68,7 +68,7 @@ $('#q4row').html(d.q4.answerlist.reduce(function (acc, c) {
 $('#emailh').text(d.emailform.heading);
 
 $( document ).ready(function() {
-    var q = ['', '', ''];
+    var q = ['', '', '', ''];
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var city = '';
     var type = '';
