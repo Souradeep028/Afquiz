@@ -110,12 +110,12 @@ $( document ).ready(function() {
         var o2 = d.outcomes[1];
         var o3 = d.outcomes[2];
         var outcome;
-        if (o1.rr[0].indexOf(q[0]) != -1 && o1.rr[1].indexOf(q[1]) != -1 && o1.rr[2].indexOf(q[2]) != -1) {
+        if (o1.rr[0].indexOf(q[0]) != -1 && o1.rr[1].indexOf(q[1]) != -1 && o1.rr[2].indexOf(q[2]) != -1 && o1.rr[3].indexOf(q[3]) != -1) {
             $('#endingh').text(o1.heading);
             $('#endingp').text(o1.paragraph);
             $('#guideimg').prop('src', './img/' + city + '/' + o1.img);
             outcome = o1.id;
-        } else if (o2.rr[0].indexOf(q[0]) != -1 && o2.rr[1].indexOf(q[1]) != -1 && o2.rr[2].indexOf(q[2]) != -1) {
+        } else if (o2.rr[0].indexOf(q[0]) != -1 && o2.rr[1].indexOf(q[1]) != -1 && o2.rr[2].indexOf(q[2]) != -1 && o1.rr[3].indexOf(q[3]) != -1) {
             $('#endingh').text(o2.heading);
             $('#endingp').text(o2.paragraph);
             $('#guideimg').prop('src', './img/' + city + '/' + o2.img);
@@ -130,7 +130,7 @@ $( document ).ready(function() {
         $('#q1input').val(q[0]);
         $('#q2input').val(q[1]);
         $('#q3input').val(q[2]);
-        $('#q4input').val(q[2]);
+        $('#q4input').val(q[3]);
         $('#outcomeinput').val(outcome);
     });
     $('#submitemail').prop('disabled', true);
