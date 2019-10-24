@@ -2,6 +2,9 @@ $('#q1container').hide();
 $('#q2container').hide();
 $('#q3container').hide();
 $('#q4container').hide();
+$('#q5container').hide();
+$('#q6container').hide();
+$('#q7container').hide();
 $('#emailcontainer').hide();
 $('#endingcontainer').hide();
 
@@ -65,6 +68,39 @@ $('#q4row').html(d.q4.answerlist.reduce(function (acc, c) {
         </div>`;
 }, ''));
 
+$('#q5h').text(d.q5.heading);
+$('#q5row').html(d.q5.answerlist.reduce(function (acc, c) {
+    return acc + 
+        `<div class="col-sm" align="center">
+            <div class="card q5" id="${c.id}">
+                <img class="card-img-top" src="./img/${c.img}">
+            </div>
+            <br>
+        </div>`;
+}, ''));
+
+$('#q6h').text(d.q6.heading);
+$('#q6row').html(d.q6.answerlist.reduce(function (acc, c) {
+    return acc + 
+        `<div class="col-sm" align="center">
+            <div class="card q6" id="${c.id}">
+                <img class="card-img-top" src="./img/${c.img}">
+            </div>
+            <br>
+        </div>`;
+}, ''));
+
+$('#q7h').text(d.q7.heading);
+$('#q7row').html(d.q7.answerlist.reduce(function (acc, c) {
+    return acc + 
+        `<div class="col-sm" align="center">
+            <div class="card q7" id="${c.id}">
+                <img class="card-img-top" src="./img/${c.img}">
+            </div>
+            <br>
+        </div>`;
+}, ''));
+
 $('#emailh').text(d.emailform.heading);
 
 $( document ).ready(function() {
@@ -98,8 +134,26 @@ $( document ).ready(function() {
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q4').click(function() {
-        q[2] = $(this).attr('id');
+        q[1] = $(this).attr('id');
         $('#q4container').hide(400);
+        $('#q5container').show(800);
+        $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
+    });
+    $('.q5').click(function() {
+        q[1] = $(this).attr('id');
+        $('#q5container').hide(400);
+        $('#q6container').show(800);
+        $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
+    });
+    $('.q6').click(function() {
+        q[1] = $(this).attr('id');
+        $('#q6container').hide(400);
+        $('#q7container').show(800);
+        $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
+    });
+    $('.q7').click(function() {
+        q[2] = $(this).attr('id');
+        $('#q7container').hide(400);
         if (emailcollected) {
             $('#endingcontainer').show(800);
         } else {
@@ -131,6 +185,9 @@ $( document ).ready(function() {
         $('#q2input').val(q[1]);
         $('#q3input').val(q[2]);
         $('#q4input').val(q[2]);
+        $('#q5input').val(q[2]);
+        $('#q6input').val(q[2]);
+        $('#q7input').val(q[2]);
         $('#outcomeinput').val(outcome);
     });
     $('#submitemail').prop('disabled', true);
@@ -143,6 +200,9 @@ $( document ).ready(function() {
             $('#q2input').prop('disabled', false);
             $('#q3input').prop('disabled', false);
             $('#q4input').prop('disabled', false);
+            $('#q5input').prop('disabled', false);
+            $('#q6input').prop('disabled', false);
+            $('#q7input').prop('disabled', false);
             $('#outcomeinput').prop('disabled', false);
         }
     });
