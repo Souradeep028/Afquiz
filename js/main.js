@@ -184,17 +184,10 @@ $( document ).ready(function() {
         $('#q1input').val(q[0]);
         $('#q2input').val(q[1]);
         $('#q3input').val(q[2]);
-<<<<<<< HEAD
         $('#q4input').val(q[2]);
         $('#q5input').val(q[2]);
         $('#q6input').val(q[2]);
         $('#q7input').val(q[2]);
-=======
-        $('#q4input').val(q[3]);
-        $('#q5input').val(q[4]);
-        $('#q6input').val(q[5]);
-        $('#q7input').val(q[6]);
->>>>>>> 58840abc93558f9a99e3aca523206daa816e48ff
         $('#outcomeinput').val(outcome);
     });
     $('#submitemail').prop('disabled', true);
