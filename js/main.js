@@ -134,25 +134,25 @@ $( document ).ready(function() {
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q4').click(function() {
-        q[1] = $(this).attr('id');
+        q[3] = $(this).attr('id');
         $('#q4container').hide(400);
         $('#q5container').show(800);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q5').click(function() {
-        q[1] = $(this).attr('id');
+        q[4] = $(this).attr('id');
         $('#q5container').hide(400);
         $('#q6container').show(800);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q6').click(function() {
-        q[1] = $(this).attr('id');
+        q[5] = $(this).attr('id');
         $('#q6container').hide(400);
         $('#q7container').show(800);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q7').click(function() {
-        q[2] = $(this).attr('id');
+        q[6] = $(this).attr('id');
         $('#q7container').hide(400);
         if (emailcollected) {
             $('#endingcontainer').show(800);
