@@ -134,25 +134,25 @@ $( document ).ready(function() {
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q4').click(function() {
-        q[3] = $(this).attr('id');
+        q[1] = $(this).attr('id');
         $('#q4container').hide(400);
         $('#q5container').show(800);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q5').click(function() {
-        q[4] = $(this).attr('id');
+        q[1] = $(this).attr('id');
         $('#q5container').hide(400);
         $('#q6container').show(800);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q6').click(function() {
-        q[5] = $(this).attr('id');
+        q[1] = $(this).attr('id');
         $('#q6container').hide(400);
         $('#q7container').show(800);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q7').click(function() {
-        q[6] = $(this).attr('id');
+        q[2] = $(this).attr('id');
         $('#q7container').hide(400);
         if (emailcollected) {
             $('#endingcontainer').show(800);
@@ -184,10 +184,17 @@ $( document ).ready(function() {
         $('#q1input').val(q[0]);
         $('#q2input').val(q[1]);
         $('#q3input').val(q[2]);
+<<<<<<< HEAD
         $('#q4input').val(q[2]);
         $('#q5input').val(q[2]);
         $('#q6input').val(q[2]);
         $('#q7input').val(q[2]);
+=======
+        $('#q4input').val(q[3]);
+        $('#q5input').val(q[4]);
+        $('#q6input').val(q[5]);
+        $('#q7input').val(q[6]);
+>>>>>>> 58840abc93558f9a99e3aca523206daa816e48ff
         $('#outcomeinput').val(outcome);
     });
     $('#submitemail').prop('disabled', true);
