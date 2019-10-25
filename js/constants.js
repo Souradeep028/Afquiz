@@ -170,7 +170,7 @@ var d = {
             "heading": "You're a Traditionalist!",
             "paragraph": "You’re an old soul grappling with modernity. You’re fascinated by history and skeptical of your phone. We know you’d prefer this quiz to be on paper because you love the smell of old books. Actually, you love all things vintage, especially your parents taste in music since you now borrow all their records. Make sure to carry your 35mm camera to check out your recommendations for the latest exhibitions and discoveries in your city!",
             "img": "traditional.jpg",
-            "rr": [["q1a"], ["q2b", "q2c"], ["q3a", "q3b", "q3c"], ["q4b"], ["q5b"], ["q6b"], ["q7b"]]
+            "rr": [["q1a"], ["q2b", "q2c"], ["q3a", "q3b", "q3c"], ["q4b", "q4c"], ["q5a", "q5b", "q5c"], ["q6a", "q6b", "q6c"], ["q7a", "q7b", "q7c"]]
         },
         {
             "id": "C",

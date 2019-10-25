@@ -136,7 +136,7 @@ $( document ).ready(function() {
     });
     $('.q2').click(function() {
         q[1] = $(this).attr('id');
-        if(q[1]=="q2b" || q[1]=="q2c"){
+        if(q[1]=="q2a"){
             T++;
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
@@ -168,7 +168,7 @@ $( document ).ready(function() {
     });
     $('.q4').click(function() {
         q[3] = $(this).attr('id');
-        if(q[3]=="q4b" || q[3]=="q4c"){
+        if(q[3]=="q4a"){
             T++;
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
@@ -184,7 +184,7 @@ $( document ).ready(function() {
     });
     $('.q5').click(function() {
         q[4] = $(this).attr('id');
-        if(q[4]=="q5a" || q[4]=="q5b" || q[4]=="q5c"){
+        if(q[4]=="q5a"){
             T++;
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
@@ -200,7 +200,7 @@ $( document ).ready(function() {
     });
     $('.q6').click(function() {
         q[5] = $(this).attr('id');
-        if(q[5]=="q6b"){
+        if(q[5]=="q6a"){
             T++;
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
@@ -216,7 +216,12 @@ $( document ).ready(function() {
     });
     $('.q7').click(function() {
         q[6] = $(this).attr('id');
-        if(q[6]=="q7a" || q[6]=="q7b" || q[6]=="q7c"){
+        if(q[6]=="q7a"){
+            T++;
+            // console.log("T value is = ", T);
+            // console.log("C value is = ", C);
+        }
+        else{
             C++;
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
