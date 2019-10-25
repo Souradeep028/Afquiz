@@ -1,4 +1,4 @@
-// $('#q1container').hide();
+$('#q1container').hide();
 $('#q2container').hide();
 $('#q3container').hide();
 $('#q4container').hide();
@@ -288,7 +288,7 @@ $( document ).ready(function() {
     $('#restart').click(function() {
         q = ['', '', ''];
         $('#endingcontainer').hide();
-        $('#q2container').show();
+        $('#q1container').show();
         $('#headernav').empty();
         $('#headernav').append(`<img src="./img/af-logo.png" id="aflogonav">`);
     })
