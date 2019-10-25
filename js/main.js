@@ -247,7 +247,7 @@ $( document ).ready(function() {
         } else {
             $('#endingh').text(o3.heading);
             $('#endingp').text(o3.paragraph);
-            $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
+            $('#guideimg').prop('src', './img' + city + '/' + o3.img);
             outcome = o3.id;
         }
         $('#cinput').val(city);
