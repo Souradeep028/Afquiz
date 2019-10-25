@@ -239,7 +239,7 @@ $( document ).ready(function() {
             $('#endingp').text(o1.paragraph);
             $('#guideimg').prop('src', './img/' + city + '/' + o1.img);
             outcome = o1.id;
-        } else if (T==4) {
+        } else if (T>=3) {
             $('#endingh').text(o2.heading);
             $('#endingp').text(o2.paragraph);
             $('#guideimg').prop('src', './img/' + city + '/' + o2.img);
