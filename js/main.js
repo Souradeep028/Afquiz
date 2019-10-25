@@ -237,17 +237,17 @@ $( document ).ready(function() {
         if (T>=5) {
             $('#endingh').text(o1.heading);
             $('#endingp').text(o1.paragraph);
-            $('#guideimg').prop('src', './img/' + city + '/' + o1.img);
+            $('#guideimg').prop('src', './img' + '/' + o1.img);
             outcome = o1.id;
         } else if (T>=0 && T<=2) {
             $('#endingh').text(o2.heading);
             $('#endingp').text(o2.paragraph);
-            $('#guideimg').prop('src', './img/' + city + '/' + o2.img);
+            $('#guideimg').prop('src', './img' + '/' + o2.img);
             outcome = o2.id;
         } else {
             $('#endingh').text(o3.heading);
             $('#endingp').text(o3.paragraph);
-            $('#guideimg').prop('src', './img' + city + '/' + o3.img);
+            $('#guideimg').prop('src', './img' + '/' + o3.img);
             outcome = o3.id;
         }
         $('#cinput').val(city);
