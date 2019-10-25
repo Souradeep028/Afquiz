@@ -234,7 +234,7 @@ $( document ).ready(function() {
         var o2 = d.outcomes[1];
         var o3 = d.outcomes[2];
         var outcome;
-        if (o1.rr[0].indexOf(q[0]) != -1 && o1.rr[1].indexOf(q[1]) != -1 && o1.rr[2].indexOf(q[2]) != -1 && o1.rr[3].indexOf(q[3]) != -1 && o1.rr[4].indexOf(q[4]) != -1 && o1.rr[5].indexOf(q[5]) != -1 && o1.rr[6].indexOf(q[6]) != -1) {
+        if (T>=6) {
             $('#endingh').text(o1.heading);
             $('#endingp').text(o1.paragraph);
             $('#guideimg').prop('src', './img/' + city + '/' + o1.img);
