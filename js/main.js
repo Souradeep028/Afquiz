@@ -288,7 +288,7 @@ $( document ).ready(function() {
     $('#restart').click(function() {
         q = ['', '', ''];
         $('#endingcontainer').hide();
-        $('#citycontainer').show();
+        $('#q2container').show();
         $('#headernav').empty();
         $('#headernav').append(`<img src="./img/af-logo.png" id="aflogonav">`);
     })
