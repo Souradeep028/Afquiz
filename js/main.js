@@ -1,4 +1,4 @@
-$('#q1container').hide();
+// $('#q1container').hide();
 $('#q2container').hide();
 $('#q3container').hide();
 $('#q4container').hide();
@@ -112,12 +112,12 @@ $( document ).ready(function() {
     var city = '';
     var type = '';
     var emailcollected = window.location.search.includes('collected');
-    $('.city').click(function() {
-        city = $(this).attr('id');
-        $('#citycontainer').hide(400);
-        $('#q1container').show(800);
-        $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
-    });
+    // $('.city').click(function() {
+    //     city = $(this).attr('id');
+    //     $('#citycontainer').hide(400);
+    //     $('#q1container').show(800);
+    //     $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
+    // });
     $('.q1').click(function() {
         q[0] = $(this).attr('id');
         if(q[0]=="q1a"){
