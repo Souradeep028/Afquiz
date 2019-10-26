@@ -217,7 +217,7 @@ $( document ).ready(function() {
     $('.q7').click(function() {
         q[6] = $(this).attr('id');
         if(q[6]=="q7a" || q[6]=="q7c"){
-            C++;
+            T++;
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
         }
