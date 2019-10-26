@@ -221,8 +221,8 @@ $( document ).ready(function() {
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
         }
-        console.log("T value is = ", T);
-        console.log("C value is = ", C);
+        console.log("T value is = ", T+1);
+        console.log("C value is = ", C+1);
         $('#q7container').hide(400);
         if (emailcollected) {
             $('#endingcontainer').show(800);
