@@ -287,6 +287,8 @@ $( document ).ready(function() {
     });
     $('#restart').click(function() {
         q = ['', '', ''];
+        T = 0;
+        C = 0;
         $('#endingcontainer').hide();
         $('#q1container').show();
         $('#headernav').empty();
