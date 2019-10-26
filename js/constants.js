@@ -1,6 +1,6 @@
 var d = {
     "site": {
-        "title": "Art Fervour Quiz"
+        "title": "Art Personality Quiz"
     },
     "cities": {
         "heading": "Where art thou?",
@@ -94,7 +94,7 @@ var d = {
         ]
     },
     "q4": {
-        "heading": "Q4: Pick your final favourite:",
+        "heading": "Q4: Which artist/band would we find on your spotify playlist?",
         "answerlist": [
             {
                 "id": "q4a",
@@ -111,7 +111,7 @@ var d = {
         ]
     },
     "q5": {
-        "heading": "Q5: Pick your final favourite:",
+        "heading": "Q5: We know its difficult, but choose one favourite movie from the options?",
         "answerlist": [
             {
                 "id": "q5a",
@@ -128,7 +128,7 @@ var d = {
         ]
     },
     "q6": {
-        "heading": "Q6: Pick your final favourite:",
+        "heading": "Q6: Stuck on a desert island, which TV show would you choose?",
         "answerlist": [
             {
                 "id": "q6a",
@@ -145,7 +145,7 @@ var d = {
         ]
     },
     "q7": {
-        "heading": "Q7: Pick your final favourite:",
+        "heading": "Q7: Relaxing with a bowl of ice cream on a Sunday afternoon, which cartoon would you rather watch?",
         "answerlist": [
             {
                 "id": "q7a",
