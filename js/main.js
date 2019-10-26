@@ -184,7 +184,7 @@ $( document ).ready(function() {
     });
     $('.q5').click(function() {
         q[4] = $(this).attr('id');
-        if(q[4]=="q5a" || q[4]=="q5b" || q[4]=="q5c"){
+        if(q[4]=="q5a"){
             T++;
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
@@ -216,13 +216,23 @@ $( document ).ready(function() {
     });
     $('.q7').click(function() {
         q[6] = $(this).attr('id');
-        if(q[6]=="q7a" || q[6]=="q7b" || q[6]=="q7c"){
+        if(q[6]=="q7a" || q[6]=="q7c"){
             C++;
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
         }
-        console.log("T value is = ", T);
-        console.log("C value is = ", C);
+        if(T==6){
+            console.log("T value is = ", T+1);
+            console.log("C value is = ", C);
+        }
+        else if(C==6){
+            console.log("T value is = ", T);
+            console.log("C value is = ", C+1);
+        }
+        else{
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
+        }
         $('#q7container').hide(400);
         if (emailcollected) {
             $('#endingcontainer').show(800);
