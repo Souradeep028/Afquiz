@@ -242,7 +242,7 @@ $( document ).ready(function() {
             console.log("C value is = ", C);
         }
         if(T==6){
-            console.log("Final result is = ");
+            console.log("Final result is : ");
             console.log("T value is = ", T);
             console.log("C value is = ", C);
         }
