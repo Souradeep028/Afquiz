@@ -117,18 +117,21 @@ $( document ).ready(function() {
         $('#citycontainer').hide(400);
         $('#q1container').show(800);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
+        console.log("Selected city is = ", city);
     });
     $('.q1').click(function() {
         q[0] = $(this).attr('id');
         if(q[0]=="q1a"){
             T++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[0]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         else{
             C++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[0]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         $('#q1container').hide(400);
         $('#q2container').show(800);
@@ -138,13 +141,15 @@ $( document ).ready(function() {
         q[1] = $(this).attr('id');
         if(q[1]=="q2b" || q[1]=="q2c"){
             T++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[1]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         else{
             C++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[1]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         $('#q2container').hide(400);
         $('#q3container').show(800);
@@ -154,13 +159,15 @@ $( document ).ready(function() {
         q[2] = $(this).attr('id');
         if(q[2]=="q3a"){
             T++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[2]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         else{
             C++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[2]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         $('#q3container').hide(400);
         $('#q4container').show(800);
@@ -170,13 +177,15 @@ $( document ).ready(function() {
         q[3] = $(this).attr('id');
         if(q[3]=="q4b" || q[3]=="q4c"){
             T++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[3]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         else{
             C++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[3]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         $('#q4container').hide(400);
         $('#q5container').show(800);
@@ -186,13 +195,15 @@ $( document ).ready(function() {
         q[4] = $(this).attr('id');
         if(q[4]=="q5a"){
             T++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[4]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         else{
             C++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[4]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         $('#q5container').hide(400);
         $('#q6container').show(800);
@@ -202,13 +213,15 @@ $( document ).ready(function() {
         q[5] = $(this).attr('id');
         if(q[5]=="q6b"){
             T++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[5]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         else{
             C++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[5]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         $('#q6container').hide(400);
         $('#q7container').show(800);
@@ -218,18 +231,28 @@ $( document ).ready(function() {
         q[6] = $(this).attr('id');
         if(q[6]=="q7a" || q[6]=="q7c"){
             C++;
-            // console.log("T value is = ", T);
-            // console.log("C value is = ", C);
+            console.log("Selected option is = ", q[6]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
+        }
+        else{
+            T++;
+            console.log("Selected option is = ", q[6]);
+            console.log("T value is = ", T);
+            console.log("C value is = ", C);
         }
         if(T==6){
-            console.log("T value is = ", T+1);
+            console.log("Final result is = ");
+            console.log("T value is = ", T);
             console.log("C value is = ", C);
         }
         else if(C==6){
+            console.log("Final result is : ");
             console.log("T value is = ", T);
-            console.log("C value is = ", C+1);
+            console.log("C value is = ", C);
         }
         else{
+            console.log("Final result is = ");
             console.log("T value is = ", T);
             console.log("C value is = ", C);
         }
@@ -249,16 +272,19 @@ $( document ).ready(function() {
             $('#endingp').text(o1.paragraph);
             $('#guideimg').prop('src', './img/' + city + '/' + o1.img);
             outcome = o1.id;
+            console.log("You are a Traditionalist.");
         } else if (T>=0 && T<=2) {
             $('#endingh').text(o2.heading);
             $('#endingp').text(o2.paragraph);
             $('#guideimg').prop('src', './img/' + city + '/' + o2.img);
             outcome = o2.id;
+            console.log("You are a Contemporary.");
         } else {
             $('#endingh').text(o3.heading);
             $('#endingp').text(o3.paragraph);
             $('#guideimg').prop('src', './img/' + city + '/' + o3.img);
             outcome = o3.id;
+            console.log("You are a Mixedbag.");
         }
         $('#cinput').val(city);
         $('#q1input').val(q[0]);
