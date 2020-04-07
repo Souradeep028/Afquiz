@@ -297,6 +297,7 @@ $( document ).ready(function() {
         $('#outcomeinput').val(outcome);
     });
     $('#submitemail').prop('disabled', true);
+    // $('#playmore').prop('disabled', true);
     $('#inputemail').keyup(function() {
         var email = String($(this).val());
         if (re.test(email.toLowerCase())) {
@@ -318,6 +319,7 @@ $( document ).ready(function() {
         $.post($form.attr("action"), $form.serialize()).then(function() {
             emailcollected = true;
             $('#emailcontainer').hide(40);
+            $('#playmore').click(()=>window.location='https://www.artfervour.com/af-games');
             $('#endingcontainer').show(800);
         });
     });
