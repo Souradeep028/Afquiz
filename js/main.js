@@ -312,14 +312,23 @@ $( document ).ready(function() {
             $('#outcomeinput').prop('disabled', false);
         }
     });
+
+    const scriptURL =`https://script.google.com/macros/s/AKfycbz5QGtkIpm2lFFanYvfBVbwEzSFE6b62Od9yFpsOuXgwo9mzaeH/exec`;
+    // const form = document.forms['quizinfo'];
+
     $('#emailform').submit(function(e) {
         e.preventDefault();
         var $form = $(this);
-        $.post($form.attr("action"), $form.serialize()).then(function() {
-            emailcollected = true;
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+
+        // $.post($form.attr("action"), $form.serialize()).then(function() {
+        //     emailcollected = true;
             $('#emailcontainer').hide(40);
             $('#endingcontainer').show(800);
-        });
+        // });
     });
     $('#restart').click(function() {
         q = ['', '', ''];
