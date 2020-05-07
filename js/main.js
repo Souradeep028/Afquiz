@@ -357,7 +357,7 @@ $(document).ready(function () {
 
   $("#emailform").submit(function (e) {
     e.preventDefault();
-    var $form = $(this);
+    // var $form = $(this);
 
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then((response) => {
@@ -372,6 +372,7 @@ $(document).ready(function () {
 
     // });
   });
+
   $("#restart").click(function () {
     q = ["", "", ""];
     $("#endingcontainer").hide();
