@@ -296,7 +296,7 @@ $( document ).ready(function() {
     $("#emailform").submit(function (e) {
       e.preventDefault();
       // var $form = $(this);
-  
+      $('#submitemail'). attr('disabled', true);
       fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => {
           $("#emailcontainer").hide(40);
