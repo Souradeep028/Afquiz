@@ -353,7 +353,7 @@ $(document).ready(function () {
   });
 
   const scriptURL = `https://script.google.com/macros/s/AKfycbz5QGtkIpm2lFFanYvfBVbwEzSFE6b62Od9yFpsOuXgwo9mzaeH/exec`;
-  // const form = document.forms['quizinfo'];
+  const form = document.forms['quizinfo'];
 
   $("#emailform").submit(function (e) {
     e.preventDefault();
