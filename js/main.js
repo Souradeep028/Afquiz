@@ -290,7 +290,7 @@ $( document ).ready(function() {
         }
     });
 
-    const scriptURL = `https://script.google.com/macros/s/AKfycbz5QGtkIpm2lFFanYvfBVbwEzSFE6b62Od9yFpsOuXgwo9mzaeH/exec`;
+    const scriptURL = `https://script.google.com/macros/s/AKfycbwgBnrli5D9UlOQMnlfS2FaE1YE9a-JBlH9D4AUXZcSOSS0csA/exec`;
     const form = document.forms['quizinfo'];
   
     $("#emailform").submit(function (e) {
